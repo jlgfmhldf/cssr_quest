@@ -1,0 +1,219 @@
+@import "lesshat.less";
+
+body {
+    background: #797979;
+    font-family: "Pt Sans", sans-serif;
+    font-weight: 700;
+}
+
+.poll {
+    background: url(../img/pattern.jpg);
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    padding: 47px 54px 75px 47px;
+    .box-sizing(border-box);
+
+        &__title {
+            text-align: center;
+            position: relative;
+            left: -17px;
+            margin: 30px 0;
+        }
+
+        &__wrap-content {
+            margin: 0 auto;
+            width: 773px;
+        }
+}
+
+.stamp {
+    background: url(../img/stamp.png) no-repeat;
+    .size(252, 106);
+    float: right;
+
+    &:after {
+        clear: both;
+    }
+}
+
+.logo {
+    float: left;
+    text-align: center;
+    font-size: 10px;
+    position: relative;
+    top: 21px;
+
+    &__text,
+    &__text {display: block;}
+
+
+}
+
+.form {
+    display: table;
+    color: #2f1b15;
+
+    &__block-text {
+        margin-bottom: 43px;
+    }
+
+    &__block-ha {
+        margin-bottom: 40px;
+    }
+}
+
+.block {
+    &__title {
+        margin: 8px 0;
+        color: #2f1b15;
+        font-size: 22.43px;
+    }
+}
+
+.fieldset-text {
+    display: table-row;
+    width: 100%;
+
+
+        &__label,
+        &__wrap-input {
+            display: table-cell;
+        }
+
+        &__input {
+            border: none;
+            background: transparent url(../img/input_text_bg.png) bottom no-repeat;
+            outline: none;
+            font: 30px "Courier New", sans-serif;
+            padding: 10px 11px 7px;
+            width: 100%;
+            background-position: 0 49px;
+            height: 62px;
+            .box-sizing(border-box);
+            color: #231f20;
+        }
+
+        &__label {
+            font-size: 22.43px;
+            vertical-align: bottom;
+            padding-right: 14px;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        &__wrap-input {
+            width: 100%;
+        }
+}
+
+.fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fieldset-ha {
+    font-size: 22.43px;
+
+    &__label-input {
+        .size(27, 27);
+        display: inline-block;
+        border-radius: 20px;
+        background: url(../img/input-radio-bg.png) no-repeat;
+        vertical-align: bottom;
+        margin: 0 6px 0 17px;
+        cursor: pointer;
+    }
+
+    &__label {
+        margin-right: 8px;
+    }
+
+    &__input:checked + &__label-input {
+        background-position: -28px 0;
+    }
+
+    &__input {display: none;}
+}
+
+.label__link {
+    color: #014f98;
+}
+
+.help {
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0;
+    margin-left: 15px;
+    position: relative;
+    margin-top: 24px;
+
+    &:before {
+        content: "*";
+        font-size: 36px;
+        position: absolute;
+        left: -15px;
+        top: 8px;
+    }
+}
+
+.fieldset-practice {
+    color: #000;
+    font-size: 21px;
+        &__column {
+            display: inline-block;
+            vertical-align: top;
+            list-style: none;
+            width: 254px;
+
+                &-2 {
+                   width: 273px;
+
+                    span {
+                        width: 218px;
+                    }
+                }
+
+                &-3 {
+                    width: 234px;
+
+
+                }
+        }
+
+        &__label {
+            background: url(../img/input-checkbox-bg.png) no-repeat;
+            .size(24, 28);
+            display: inline-block;
+
+            & + span {
+                display: inline-block;
+                vertical-align: text-top;
+            }
+        }
+
+        &__input:checked + &__label {
+            background-position: -32px 0;
+        }
+
+        &__input {display: none;}
+
+}
+
+br {clear: both;}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.date {
+    &__input {
+        width: 207px;
+        text-align: center;
+    }
+}

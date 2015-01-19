@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet/less" href="assets/css/style.less">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CSSSR Дело</title>
+</head>
+<body>
+    
+    <div class="poll">
+        <header>
+            <div class="logo">
+                <img src="assets/img/logo.png" height="35" width="144"alt="logo" class="logo__img">
+                <span class="logo__text">Секретный архив учреждения</span>
+            </div>
+            <div class="stamp"></div> <br>
+        </header>
+        <div class="poll__wrap-content">
+            <h1 class="poll__title"><img src="assets/img/title_img.png" height="118" width="221"></h1>
+            <form action="" class="form">
+                <div class="form__block-text block">
+                    <fieldset class="fieldset fieldset-text">
+                        <label for="name" class="fieldset-text__label">Полное ФИО</label>
+                        <div class="fieldset-text__wrap-input"><input id="name" type="text" class="fieldset-text__input" value="Земцева Виктория Ивановна"></div>
+                    </fieldset>
+                    <fieldset class="fieldset fieldset-text">
+                        <label for="age" class="fieldset-text__label">Год рождения</label>
+                        <div class="fieldset-text__wrap-input"><input id="age" type="text" class="fieldset-text__input" value="1996"></div>
+                    </fieldset> 
+                    <fieldset class="fieldset fieldset-text">
+                        <label for="residence" class="fieldset-text__label">Место жительства</label>
+                        <div class="fieldset-text__wrap-input"><input id="residence" type="text" class="fieldset-text__input" value="г. Белгород, Россия"></div>
+                    </fieldset>
+                    <fieldset class="fieldset fieldset-text">
+                        <label for="skype" class="fieldset-text__label">Скайп</label>
+                        <div class="fieldset-text__wrap-input"><input id="skype" type="text" class="fieldset-text__input" value="jlgfmhldf"></div>
+                    </fieldset>
+                    <fieldset class="fieldset fieldset-text">
+                        <label for="mail" class="fieldset-text__label">Почта</label>
+                        <div class="fieldset-text__wrap-input"><input id="mail" type="text" class="fieldset-text__input" value="jlgfmhldf@gmail.com"></div>
+                    </fieldset>
+                </div>
+                <div class="form__block-ha block">
+                    <fieldset class="fieldset-ha fieldset">
+                        <span for="htmlacademy" class="fieldset-ha__label">
+                            Выпускник <a href="http://htmlacademy.ru" class="label__link">htmlacademy.ru</a>
+                        </span>
+
+                        <input type="radio" id="htmlacademy-yes" name="htmlacademy" class="fieldset-ha__input">
+                        <label for="htmlacademy-yes" class="fieldset-ha__label-input "></label><span>Да</span>
+
+                        <input type="radio" id="htmlacademy-no" name="htmlacademy" class="fieldset-ha__input" checked="checked">
+                        <label for="htmlacademy-no" class="fieldset-ha__label-input "></label><span>Нет</span>
+
+                    </fieldset>
+                </div>
+                <div class="form__block-practice block">
+                    <h2 class="block__title">Практические навыки</h2>
+                    <p class="help">Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+                    <fieldset class="fieldset fieldset-practice">
+                        <ul class="fieldset-practice__column fieldset-practice__column-1">
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-1" class="fieldset-practice__input">
+                                <label for="practice-1" class="fieldset-practice__label"></label>
+                                <span>Методология БЭМ</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-2" class="fieldset-practice__input">
+                                <label for="practice-2" class="fieldset-practice__label"></label>
+                                <span>jQuery</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-3" class="fieldset-practice__input">
+                                <label for="practice-3" class="fieldset-practice__label"></label>
+                                <span>Использую GRUNT</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-4" class="fieldset-practice__input">
+                                <label for="practice-4" class="fieldset-practice__label"></label>
+                                <span>HAML</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-5" class="fieldset-practice__input">
+                                <label for="practice-5" class="fieldset-practice__label"></label>
+                                <span>SASS</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-6" class="fieldset-practice__input">
+                                <label for="practice-6" class="fieldset-practice__label"></label>
+                                <span>LESS</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-7" class="fieldset-practice__input">
+                                <label for="practice-7" class="fieldset-practice__label"></label>
+                                <span>CoffeeScript</span>
+                            </li>
+
+                        </ul>
+
+                        <ul class="fieldset-practice__column fieldset-practice__column-2">
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-8" class="fieldset-practice__input">
+                                <label for="practice-8" class="fieldset-practice__label"></label>
+                                <span>Jade</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-9" class="fieldset-practice__input">
+                                <label for="practice-9" class="fieldset-practice__label"></label>
+                                <span>Stylus</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-10" class="fieldset-practice__input">
+                                <label for="practice-10" class="fieldset-practice__label"></label>
+                                <span>Знаю (изучаю) Angular</span>
+                            </li>
+                            <li class="fieldset-practice__item"> 
+                                <input type="checkbox" name="practice" id="practice-11" class="fieldset-practice__input">
+                                <label for="practice-11" class="fieldset-practice__label"></label>
+                                <span>Верстка под Android</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-12" class="fieldset-practice__input">
+                                <label for="practice-12" class="fieldset-practice__label"></label>
+                                <span>Верстка под iOS</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-13" class="fieldset-practice__input">
+                                <label for="practice-13" class="fieldset-practice__label"></label>
+                                <span>Верстка под Windows Phone</span>
+                            </li>
+                        </ul>
+
+                        <ul class="fieldset-practice__column fieldset-practice__column-3">
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-14" class="fieldset-practice__input">
+                                <label for="practice-14" class="fieldset-practice__label"></label>
+                                <span>Верстка рассылок</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-15" class="fieldset-practice__input">
+                                <label for="practice-15" class="fieldset-practice__label"></label>
+                               <span>Адаптивная верстка</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-16" class="fieldset-practice__input">
+                                <label for="practice-16" class="fieldset-practice__label"></label>
+                                <span>Использую Dropbox</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-17" class="fieldset-practice__input">
+                                <label for="practice-17" class="fieldset-practice__label"></label>
+                                <span>Использую Gmail</span>
+                            </li>
+                            <li class="fieldset-practice__item">
+                                <input type="checkbox" name="practice" id="practice-18" class="fieldset-practice__input">
+                                <label for="practice-18" class="fieldset-practice__label"></label>
+                                <span>Использую GitHub</span>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                <fieldset class="fieldset fieldset-text date">
+                    <label for="name" class="fieldset-text__label">Дата заполнения</label>
+                    <div class="fieldset-text__wrap-input"><input id="name" type="text" class="fieldset-text__input date__input" value="20.01.15"></div>
+                </fieldset>     
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/less.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
