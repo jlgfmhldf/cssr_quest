@@ -1,5 +1,5 @@
 @import "lesshat.less";
-@import "jquery.range.less";
+
 
 body {
     background: #797979;
@@ -176,25 +176,35 @@ body {
 .fieldset-practice {
     color: #000;
     font-size: 21px;
+    text-align: center;
         &__column {
             display: inline-block;
             vertical-align: top;
             list-style: none;
-            width: 254px;
+            max-width: 253px;
+            min-width: 233px;
+            float: left;
+            text-align: left;
 
                 &-2 {
-                   width: 273px;
+                   max-width: 283px;
+                   min-width: 263px;
+                   float: none;
 
                         span {
-                            width: 218px;
-                            display: inline-block;
-                            vertical-align: text-top;
+                            width: 243px;
                         }
                 }
 
                 &-3 {
-                    width: 234px;
+                    float: right;
                 }
+
+                span {
+                    display: inline-block;
+                    vertical-align: text-top;
+                }
+
         }
 
         &__label {cursor: pointer;}
@@ -227,6 +237,7 @@ li {
         text-align: center;
     }
 }
+@import "jquery.range.less";
 
 .block-slider__label {
     width: 170px;
