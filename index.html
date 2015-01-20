@@ -47,9 +47,7 @@
                     <fieldset class="fieldset-ha fieldset">
                         <span for="htmlacademy" class="fieldset-ha__label">
                             Выпускник <a href="http://htmlacademy.ru" class="label__link">htmlacademy.ru</a>
-                        </span>
-
-                        
+                        </span>                       
                         <label  class="fieldset-ha__label ">
                             <input type="radio"  name="htmlacademy" class="fieldset-ha__input">
                             <i class="input_radio_icon"></i><span>Да</span>
@@ -169,6 +167,14 @@
                         </ul>
                     </fieldset>
                 </div>
+                <div class="form__block-slider">
+                    <h2 class="block__title">Уровень владения JavaScript</h2>
+                    <input type="hidden" class="slider-input" id="slider" value="20" />
+                    <span class="block-slider__label block-slider__label-1">Не владею</span>
+                    <span class="block-slider__label block-slider__label-2">Использую готовые решения</span>
+                    <span class="block-slider__label block-slider__label-3">Использую готовые решения и умею их переделывать</span>
+                    <span class="block-slider__label block-slider__label-4">Пишу сложные скрипты</span>
+                </div>
                 <div class="form__block-date block">
                     <fieldset class="fieldset fieldset-text">
                         <label for="date" class="fieldset-text__label">Дата заполнения</label>
@@ -180,6 +186,7 @@
     </div>
 
     <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/jquery.range-min.js"></script>
     <script src="assets/js/less.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
