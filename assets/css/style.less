@@ -99,7 +99,6 @@ body {
             vertical-align: bottom;
             padding-right: 14px;
             white-space: nowrap;
-            cursor: pointer;
         }
 
         &__wrap-input {
@@ -116,26 +115,27 @@ body {
 .fieldset-ha {
     font-size: 22.43px;
 
-    &__label-input {
-        .size(27, 27);
-        display: inline-block;
-        border-radius: 20px;
-        background: url(../img/input-radio-bg.png) no-repeat;
-        vertical-align: bottom;
-        margin: 0 6px 0 17px;
+    &__label {
+        margin-right: 8px;
         cursor: pointer;
     }
 
-    &__label {
-        margin-right: 8px;
-    }
-
-    &__input:checked + &__label-input {
+    &__input:checked  + .input_radio_icon {
         background-position: -28px 0;
     }
 
     &__input {display: none;}
 }
+
+.input_radio_icon {
+    .size(27, 27);
+    display: inline-block;
+    border-radius: 20px;
+    background: url(../img/input-radio-bg.png) no-repeat;
+    vertical-align: bottom;
+    margin: 0 6px 0 14px;
+}
+
 
 .label__link {
     color: #014f98;
@@ -146,16 +146,14 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
-    margin: 0;
-    margin-left: 15px;
+    margin: 0 0 15px 17px;
     position: relative;
-    margin-top: 24px;
 
     &:before {
         content: "*";
         font-size: 36px;
         position: absolute;
-        left: -15px;
+        left: -17px;
         top: 8px;
     }
 }
@@ -172,35 +170,32 @@ body {
                 &-2 {
                    width: 273px;
 
-                    span {
-                        width: 218px;
-                    }
+                        span {
+                            width: 218px;
+                            display: inline-block;
+                            vertical-align: text-top;
+                        }
                 }
 
                 &-3 {
                     width: 234px;
-
-
                 }
         }
 
-        &__label {
-            background: url(../img/input-checkbox-bg.png) no-repeat;
-            .size(24, 28);
-            display: inline-block;
+        &__label {cursor: pointer;}
 
-            & + span {
-                display: inline-block;
-                vertical-align: text-top;
-            }
-        }
-
-        &__input:checked + &__label {
+        &__input:checked + .input_checkbox_icon {
             background-position: -32px 0;
         }
 
         &__input {display: none;}
 
+}
+
+.input_checkbox_icon {
+    background: url(../img/input-checkbox-bg.png) no-repeat;
+    .size(24, 28);
+    display: inline-block;
 }
 
 br {clear: both;}
