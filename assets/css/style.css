@@ -295,22 +295,3 @@ li {
 .block-slider__label-2 {
   left: -24px;
 }
-.fieldset-text__label,
-.fieldset-text__wrap-input {
-  display: inline;
-}
-#name {
-  width: 612px;
-}
-#age {
-  width: 597px;
-}
-#residence {
-  width: 549px;
-}
-#skype {
-  width: 687px;
-}
-#mail {
-  width: 687px;
-}
